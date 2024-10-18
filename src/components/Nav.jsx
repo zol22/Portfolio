@@ -1,8 +1,6 @@
 import {Link} from 'react-router-dom'
-import Home from './Home'
 import { useState } from 'react'
 import { FaTimes } from "react-icons/fa";
-import { CiMenuFries } from "react-icons/ci";
 import { SlMenu } from "react-icons/sl";
 
 
@@ -14,12 +12,12 @@ const Nav = () => {
         setClick(!click)
     }
     const content = <>
-        <div className='lg:hidden block absolute top-16 w-full h-full left-0 right-0 transition z-10'>
+        <div className='lg:hidden block absolute top-20 w-full h-screen left-0 right-0 transition z-10 bg-indigo-300'>
             <ul className='text-center h-full text-xl p-20'>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-100 hover:rounded'><Link to="/">Home</Link></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-100 hover:rounded'><Link to="/about">About</Link></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-100 hover:rounded'><Link to="/projects">Projects</Link></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-100 hover:rounded'><Link to="/contact">Contact</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-indigo-200 hover:rounded'><Link onClick={handleClick} to="/">Home</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-indigo-200  hover:rounded'><Link onClick={handleClick} to="/about">About</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-indigo-200  hover:rounded'><Link onClick={handleClick}to="/projects">Projects</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-indigo-200  hover:rounded'><Link onClick={handleClick}to="/contact">Contact</Link></li>
             </ul>
         </div>
     </>
