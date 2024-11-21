@@ -18,7 +18,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="p-10 bg-gray-50">
+    <section id="projects" className="p-10">
       <h2 className="text-3xl font-semibold text-center text-gray-700 mb-10">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
