@@ -11,11 +11,21 @@ const Nav = () => {
     const handleClick = () => {
         setClick(!click)
     }
+
+    const handleHomeClickMobile = () => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+        handleClick(); // Close the mobile menu
+      };
+
+      const handleHomeClickDesktop = () => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+      };
+
     const content = <>
         {/* This is hidden if screen is large */}
         <div className='lg:hidden block absolute top-20 w-full h-screen left-0 right-0 transition z-10 bg-secondary'>
             <ul className='text-center h-full text-xl p-20'>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300 hover:rounded'><LinkRouter onClick={handleClick} to="/">Home</LinkRouter></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300 hover:rounded'><LinkRouter onClick={handleHomeClickMobile} to="/">Home</LinkRouter></li>
                 <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick} to="#about">About</Link></li>
                 <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick}to="#projects">Projects</Link></li>
                 <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300  hover:rounded'><Link onClick={handleClick}to="#contact">Contact</Link></li>
@@ -28,7 +38,7 @@ const Nav = () => {
             {/* This is hidden only if screen is small */}
             <div className='hidden lg:flex lg:flex-1 md:flex'>
                 <ul className='flex gap-8 text-xl'>
-                    <li><LinkRouter to="/">Home</LinkRouter></li>
+                    <li><LinkRouter to="/" onClick={handleHomeClickDesktop}>Home</LinkRouter></li>
                     <li><Link to="#about">About</Link></li>
                     <li><Link to="#projects">Projects</Link></li>
                     <li><Link to="#contact">Contact</Link></li>
