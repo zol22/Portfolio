@@ -1,8 +1,8 @@
 const Title = () => {
     return (
         <div>
-            <h2 className="text-3xl font-bold">Solange Ormeno</h2>
-            <h1>Full Stack Developer & QA Tester</h1>
+            <h2 className="text-3xl text-textPrimary font-semibold ">Solange Ormeno</h2>
+            <h2 className="text-xl">Software Engineer</h2>
         </div>
     )
 

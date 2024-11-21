@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#DFD3C3', //
-        secondary: '#ba867b', // Light gray
+        primary: '#594423', //Dark Champagne 
+        secondary: '#d4c5ae', // Light Champagne
         accent: '#e3e3e3', // Soft gray
         textPrimary: '#3d3d3d', // Dark gray text
         textSecondary: '#5e5e5e', // Lighter gray text

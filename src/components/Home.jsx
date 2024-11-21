@@ -1,9 +1,19 @@
+import About from './About'
+import Projects  from './Projects'
+import Contact from './Contact'
+import Skills from './Skills'
+import Education from './Education'
+
 const Home = () => {
+
     return (
-        <div id="home" className=" py-5 px-5 flex flex-col items-center">
-        <p>Home</p>
+        <div>
+            <About />
+            <Skills />
+            <Education />
+            <Projects />
+            <Contact />
         </div>
     )
-    
 }
 export default Home;
