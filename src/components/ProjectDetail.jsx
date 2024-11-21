@@ -48,7 +48,7 @@ const ProjectDetail = () => {
         { title:'Scalability', goal: 'Enable future expansion for interacting with additional websites or adding new features without needing to overhaul the core logic.'}
       ],
       technologies: [
-        { name: 'Python', description:'The primary programming language used to write scripts for automation, email handling, and data management.'}, 
+        { name: 'Python', description:' Used to write scripts for automation, email handling, and data management.'}, 
         { name: 'Selenium', description: "A web automation tool to interact with Udemy's website, allowing the script to simulate user actions such as clicking buttons and typing input."}, 
         { name:'Azure OAuth2 (MSAL)', description: 'Secure user login via Azure. The OAuth2 flow ensures a safe and reliable sign-in process, including retrieving and processing the verification code from email.'},
         { name: 'pytest', description:'A framework used for testing and verifying that the login, navigation, and data extraction steps work correctly.'},
