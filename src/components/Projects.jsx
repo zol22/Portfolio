@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     name: 'Vision Board Web App',
     description: 'A web app that allows users to visualize their goals...',
-    imageUrl: 'path-to-image.jpg',  // Add your image paths
+    imageUrl: '/images/Vision-Board-Unsplash.jpg',  // Add your image paths
   },
   {
     id: 2,

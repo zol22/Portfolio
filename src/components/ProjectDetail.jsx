@@ -13,6 +13,7 @@ const ProjectDetail = () => {
   const projectDetails = {
     1: {
       name: 'Vision Board Web App',
+      image: ['/images/Vision-Board.png'],
       description: `The Vision Board Web App is an interactive tool designed to help users visualize 
       and organize their goals for the future.The app enables users to create a personalized vision board
       by selecting topics such as Love, Family, Friends, Money, Success, Health, Personal Goals, and Travel. 
@@ -35,6 +36,7 @@ const ProjectDetail = () => {
     },
     2: {
       name: 'Course Progress Tracker',
+      image: '',
       description: `This project automates the login process and navigation through the Udemy website using Python, Selenium, and Microsoft’s
       OAuth2 for authentication. The goal is to automate the login experience, retrieve the verification code
       from email messages, and allow easy access to learning content like course modules. After login, 
@@ -65,7 +67,13 @@ const ProjectDetail = () => {
       >
       Back To Home
       </button>
-      <h2 className="text-3xl font-semibold text-gray-700 mb-2">{project.name}</h2>
+      <h2 className='text-l mb-3'>A little bit more of this project...</h2>
+      <h2 className="text-3xl text-gray-700 mb-2">{project.name}</h2>
+      <img 
+          src={project.image} 
+          alt={project.name} 
+          className="w-full  h-auto object-cover mb-10 p-2"
+      />
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">{project.description}</p>
       <h3 className="text-2xl font-semibold text-gray-700 mb-2">Goals</h3>
       <ul className="list-disc ml-8 text-gray-600 mb-10">
