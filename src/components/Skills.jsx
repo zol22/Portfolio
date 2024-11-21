@@ -8,10 +8,10 @@ const skills = {
 const Skills = () => {
   return (
     <section id="skills" className="px-20 py-20 bg-gray-50">
-      <h2 className="text-3xl font-semibold text-center text-gray-700 mb-10 ">My Dev Superpowers</h2>
+      <h2 className="text-3xl font-semibold text-center text-gray-700 mb-10" data-aos="fade-down">My Dev Superpowers</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {Object.entries(skills).map(([category, skillsList]) => (
-          <div key={category} className=" rounded-lg shadow-lg p-6">
+          <div key={category} className=" rounded-lg shadow-lg p-6" data-aos="fade-up-right">
             <h3 className="text-xl  text-textPrimary font-semibold mb-4 pb-2">{category}</h3>
             <ul className="space-y-2">
               {skillsList.map((skill, index) => (

@@ -3,7 +3,7 @@ const Contact = () => {
   return (
     <section className="bg-gray-50 py-20 px-4" id="contact">
       <div className="container mx-auto max-w-4xl text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+        <h2 className="text-3xl font-semibold text-center text-gray-700  mb-4" data-aos="fade-down" >Get In Touch</h2>
         <p className="text-lg text-gray-600 mb-8">
           Whether you have an exciting project idea, a job opportunity, or just want to connect, 
           feel free to reach out! I'll get back to you as soon as possible.

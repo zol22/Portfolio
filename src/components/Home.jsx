@@ -5,13 +5,12 @@ import Education from './Education'
 import Contact from './Contact'
 
 const Home = () => {
-
     return (
         <div>
             <About />
             <Skills />
             <Education />
-            <Projects />
+            <Projects data-aos="fade-right"/>
             <Contact />
 
         </div>

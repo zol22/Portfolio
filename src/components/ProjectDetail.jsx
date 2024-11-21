@@ -20,10 +20,10 @@ const ProjectDetail = () => {
       of their aspirations for the year 2025. The app provides an intuitive and engaging user experience, 
       encouraging users to stay motivated and focused on their goals.`,
       goals: [
-        'Personalized Vision Board: Users can select from predefined topics and upload images that align with their personal goals.',
-        'Visualization of Future Goals: Organize and display future goals clearly for ongoing motivation and focus.',
-        'Interactive Experience: Users can easily update and modify their vision board as their goals evolve.',
-        'Motivation for 2025: Encourage users to plan for the new year with a clear vision of what they want to achieve.'
+        { title:'Personalized Vision Board', goal: 'Users can select from predefined topics and upload images that align with their personal goals.'},
+        { title:'Visualization of Future Goals', goal: 'Organize and display future goals clearly for ongoing motivation and focus.'},
+        { title:'Interactive Experience', goal: 'Users can easily update and modify their vision board as their goals evolve.'},
+        { title:'Motivation for 2025', goal: 'Encourage users to plan for the new year with a clear vision of what they want to achieve.'}
       ],
       technologies: [
         { name: 'React', description:'Used for building the user interface and handling state management.'}, 
