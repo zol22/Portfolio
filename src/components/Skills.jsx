@@ -7,7 +7,7 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-20 py-20 bg-gray-50">
+    <section id="skills" className="px-20 py-20  bg-gray-50">
       <h2 className="text-3xl font-semibold text-center text-gray-700 mb-10" data-aos="fade-down">My Dev Superpowers</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {Object.entries(skills).map(([category, skillsList]) => (
