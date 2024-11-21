@@ -8,6 +8,7 @@ import './App.css'
 import 'aos/dist/aos.css'; // Import AOS styles
 import Aos from 'aos'
 import { useEffect } from 'react'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div>
+      <ScrollToTop />
      <Header />
       <Routes>
       <Route path="/" element={<Home />} />
