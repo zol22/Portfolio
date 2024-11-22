@@ -5,7 +5,7 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (pathname === "/") {
+    if (pathname === "/" || "/projects/:projectId") {
         // If we are on the home route, scroll to the top
         window.scrollTo(0, 0);
       }

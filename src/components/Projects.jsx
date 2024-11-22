@@ -5,14 +5,20 @@ const projects = [
   {
     id: 1,
     name: 'Vision Board Web App',
-    description: 'A web app that allows users to visualize their goals...',
+    description: 'It is an interactive tool designed to help users visualize and organize their goals...',
     imageUrl: '/images/Vision-Board-Unsplash.jpg',  // Add your image paths
   },
   {
     id: 2,
     name: 'Course Progress Tracker',
-    description: 'Track learning progress across various courses...',
-    imageUrl: 'path-to-image2.jpg',
+    description: 'This project automates the login process and navigation through the Udemy website...',
+    imageUrl: '/images/course-tracker-unsplash.jpg',
+  },
+  {
+    id: 3,
+    name: 'E-commerce Web App',
+    description: 'It is a React-based web application designed to simulate an online shopping platform...',
+    imageUrl: '/images/E-commerce-unsplash.jpg',
   },
 ];
 

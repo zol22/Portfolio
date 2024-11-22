@@ -13,9 +13,9 @@ const ProjectDetail = () => {
   const projectDetails = {
     1: {
       name: 'Vision Board Web App',
-      image: ['/images/Vision-Board.png'],
+      image: '/images/Vision-Board.png',
       description: `The Vision Board Web App is an interactive tool designed to help users visualize 
-      and organize their goals for the future.The app enables users to create a personalized vision board
+      and organize their goals for the future. The app enables users to create a personalized vision board
       by selecting topics such as Love, Family, Friends, Money, Success, Health, Personal Goals, and Travel. 
       Users can add custom images related to each topic, making the vision board a visual representation 
       of their aspirations for the year 2025. The app provides an intuitive and engaging user experience, 
@@ -33,10 +33,12 @@ const ProjectDetail = () => {
         { name: 'JavaScript (ES6)', description:'For scripting and creating interactive elements in the app.'},
         { name:'React Hooks (useState, useEffect)', description: 'Utilized for managing state and side effects, ensuring smooth user interactions.'}
       ],
+      liveLink: 'https://visionboard2025.netlify.app',
+      githubLink: 'https://github.com/zol22/visionBoard',
     },
     2: {
       name: 'Course Progress Tracker',
-      image: '',
+      image: '/images/Course_Tracker.png',
       description: `This project automates the login process and navigation through the Udemy website using Python, Selenium, and Microsoft’s
       OAuth2 for authentication. The goal is to automate the login experience, retrieve the verification code
       from email messages, and allow easy access to learning content like course modules. After login, 
@@ -56,6 +58,31 @@ const ProjectDetail = () => {
         { name: 'pytest', description:'A framework used for testing and verifying that the login, navigation, and data extraction steps work correctly.'},
         { name:'Undetected Chromedriver', description: 'Avoids bot detection.'}
       ],
+      githubLink: 'https://github.com/zol22/Course_Progress_Tracker',
+    },
+    3: {
+      name: 'E-commerce App',
+      image: '/images/E-commerce.png',
+      description: `The E-commerce App is a React-based platform that delivers a dynamic online shopping experience. It features a home page, product catalog, wishlist functionality, 
+      shopping cart with quantity adjustments, and a contact form. Users can browse clothing items, save favorites to a wishlist, manage a cart with add, delete, or quantity update options, 
+      and simulate a payment process. The app is designed with Material-UI for responsiveness and modern aesthetics, offering seamless navigation across its pages, including About and Contact 
+      sections. It is hosted on Firebase at E-commerce App.`,
+      goals: [
+        { title:"User-Friendly Shopping Experience", goal: "Create an intuitive platform with features like product browsing, wishlists, and cart management."},
+        { title:'E-Commerce Functionality', goal: 'Implement real-world features such as adding, removing, and updating cart items, with a simulated checkout process.'},
+        { title:'Responsive Design', goal: 'Utilize Material-UI for a visually appealing and mobile-friendly experience.'},
+        { title:'Portfolio Showcase', goal: 'Highlight skills in React, state management, and UI/UX design for professional growth.'},
+        { title:'Seamless Navigation', goal: 'Ensure smooth transitions across pages like Home, Products, About, and Contact.'}
+      ],
+      technologies: [
+        { name: 'React', description:"Core framework for building the application's interactive UI."}, 
+        { name: 'Material-UI (MUI)', description: "Library for pre-styled components (@mui/material, @mui/icons-material, and @mui/lab)."}, 
+        { name:'React-Redux', description: 'Integration of Redux with React for connecting the global state with components.'},
+        { name: 'React Hook Form', description:' For managing and validating user input efficiently.'},
+        { name:'UUID', description: 'Generates unique identifiers for data objects such as products.'}
+      ],
+      liveLink: 'https://ecommerce-faca4.web.app',
+      githubLink: 'https://github.com/zol22/ecommerce-app',
     },
   };
 
@@ -63,7 +90,7 @@ const ProjectDetail = () => {
 
   return (
     <section className="p-10  bg-gray-50 rounded-xl shadow-xl">
-      <button onClick={handleBackClick}className="px-4 text-sm py-2 bg-primary text-white rounded hover:bg-secondary mb-10"
+      <button onClick={handleBackClick}className="px-4 text-sm py-2 bg-primary text-white rounded hover:bg-yellow-950 mb-10 transition duration-300"
       >
       Back To Home
       </button>
@@ -91,14 +118,28 @@ const ProjectDetail = () => {
           </li>
         ))}
       </ul>
-      <a
-        href={`https://visionboard2025.netlify.app`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-primary text-white px-6 py-3 rounded-full mt-6 inline-block shadow-lg hover:bg-secondary transition duration-300"
-      >
-        See Live
-      </a>
+      <div className="mt-6 flex gap-4">
+        {project.liveLink && (
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 text-sm py-2 bg-primary text-white rounded hover:bg-yellow-950 mb-10 shadow-lg transition duration-300"
+          >
+            See Live
+          </a>
+        )}
+        {project.githubLink && (
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 text-sm py-2 bg-primary text-white rounded hover:bg-yellow-950 mb-10 shadow-lg transition duration-300"
+          >
+           GitHub Repository
+          </a>
+        )}
+      </div>
     </section>
   );
 };

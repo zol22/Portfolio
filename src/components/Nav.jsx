@@ -3,11 +3,15 @@ import { FaTimes } from "react-icons/fa";
 import { SlMenu } from "react-icons/sl";
 import { HashLink as Link} from 'react-router-hash-link';
 import { Link as LinkRouter } from 'react-router-dom';
+import { HashLink  } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 
 
 const Nav = () => {
 
     const [click, setClick] = useState(false)
+    const navigate = useNavigate();
+
     const handleClick = () => {
         setClick(!click)
     }
@@ -26,9 +30,9 @@ const Nav = () => {
         <div className='lg:hidden block absolute top-20 w-full h-screen left-0 right-0 transition z-10 bg-secondary'>
             <ul className='text-center h-full text-xl p-20'>
                 <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300 hover:rounded'><LinkRouter onClick={handleHomeClickMobile} to="/">Home</LinkRouter></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick} to="#about">About</Link></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick}to="#projects">Projects</Link></li>
-                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300  hover:rounded'><Link onClick={handleClick}to="#contact">Contact</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick} to="/#about">About</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300   hover:rounded'><Link onClick={handleClick}to="/#projects">Projects</Link></li>
+                <li className='my-4 py-4 border-b border-slate-800 hover:bg-neutral-300  hover:rounded'><Link onClick={handleClick}to="/#contact">Contact</Link></li>
             </ul>
         </div>
     </>
@@ -39,9 +43,9 @@ const Nav = () => {
             <div className='hidden lg:flex lg:flex-1 md:flex'>
                 <ul className='flex gap-8 text-xl'>
                     <li><LinkRouter to="/" onClick={handleHomeClickDesktop}>Home</LinkRouter></li>
-                    <li><Link to="#about">About</Link></li>
-                    <li><Link to="#projects">Projects</Link></li>
-                    <li><Link to="#contact">Contact</Link></li>
+                    <li><Link to="/#about">About</Link></li>
+                    <li><Link to="/#projects">Projects</Link></li>
+                    <li><Link to="/#contact">Contact</Link></li>
                 </ul>
             </div>
             <div>
