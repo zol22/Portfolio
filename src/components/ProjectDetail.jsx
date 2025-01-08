@@ -37,28 +37,27 @@ const ProjectDetail = () => {
       githubLink: 'https://github.com/zol22/visionBoard',
     },
     2: {
-      name: 'Course Progress Tracker',
-      image: '/images/Course_Tracker.png',
-      description: `This project automates the login process and navigation through the Udemy website using Python, Selenium, and Microsoft’s
-      OAuth2 for authentication. The goal is to automate the login experience, retrieve the verification code
-      from email messages, and allow easy access to learning content like course modules. After login, 
-      the user can automatically navigate to "My Learning" and fetch course and module data, storing it 
-      in a structured format (CSV or Excel) for easy access and tracking.`,
+      name: 'Family Chore Tracker',
+      image: '/images/chore-tracker.png',
+      description: `The Family Chore Tracker is an interactive web application designed to streamline family task management. 
+      It allows parents to assign tasks, track progress, and reward children with points. The app fosters accountability, teamwork, 
+      and motivation among family members by gamifying household chores. `,
       goals: [
-        { title:"Automate Login", goal: "Leverage Selenium and Azure's OAuth2 authentication (via MSAL) to automate login and retrieve the verification code from email for seamless user login."},
-        { title:'Access Learning Content', goal: 'Navigate to the "My Learning" page to retrieve course and module data.'},
-        { title:'Data Extraction', goal: 'Extract course and submodule titles, storing them in CSV format for easy tracking.'},
-        { title:'Error Handling', goal: 'Manage dynamic web elements effectively and handle edge cases like failed authentications.'},
-        { title:'Scalability', goal: 'Enable future expansion for interacting with additional websites or adding new features without needing to overhaul the core logic.'}
+        { title:"Simplify Household Management", goal: "Enable parents to assign chores to children effortlessly and allow children to track their progress independently."},
+        { title:'Encourage Responsibility', goal: 'Motivate children with rewards and points for completing tasks.'},
+        { title:'Real-Time Interaction', goal: 'Synchronize data across all family members in real-time, ensuring instant updates.'},
+        { title:'User-Friendly Experience', goal: 'Provide an intuitive drag-and-drop interface for task management.'},
+        { title:'Gamification and Rewards', goal: 'Incentivize children by awarding points for completed tasks.'}
       ],
       technologies: [
-        { name: 'Python', description:' Used to write scripts for automation, email handling, and data management.'}, 
-        { name: 'Selenium', description: "A web automation tool to interact with Udemy's website, allowing the script to simulate user actions such as clicking buttons and typing input."}, 
-        { name:'Azure OAuth2 (MSAL)', description: 'Secure user login via Azure. The OAuth2 flow ensures a safe and reliable sign-in process, including retrieving and processing the verification code from email.'},
-        { name: 'pytest', description:'A framework used for testing and verifying that the login, navigation, and data extraction steps work correctly.'},
-        { name:'Undetected Chromedriver', description: 'Avoids bot detection.'}
+        { name: 'React', description:"Hooks for creating a dynamic, responsive UI."}, 
+        { name: 'Tailwind CSS', description: "Modern, customizable styling."}, 
+        { name:'React DnD (Drag-and-Drop)', description: 'For task management.'},
+        { name: 'Firebase', description:'Firestore as a real-time database and Firebase Authentication for secure user login and role-based access.'},
+        { name:'Redux Toolkit', description: 'Managing global state (tasks, children, and user data).'}
       ],
-      githubLink: 'https://github.com/zol22/Course_Progress_Tracker',
+      liveLink: 'https://zippy-pavlova-6a251a.netlify.app',
+      githubLink: 'https://github.com/zol22/Parent-Child-Chore-Manager',
     },
     3: {
       name: 'E-commerce App',
@@ -85,29 +84,32 @@ const ProjectDetail = () => {
       githubLink: 'https://github.com/zol22/ecommerce-app',
     },
     4: {
-      name: 'Family Chore Tracker',
-      image: '/images/chore-tracker.png',
-      description: `The Family Chore Tracker is an interactive web application designed to streamline family task management. 
-      It allows parents to assign tasks, track progress, and reward children with points. The app fosters accountability, teamwork, 
-      and motivation among family members by gamifying household chores. `,
+      name: 'Course Progress Tracker',
+      image: '/images/Course_Tracker.png',
+      description: `This project automates the login process and navigation through the Udemy website using Python, Selenium, and Microsoft’s
+      OAuth2 for authentication. The goal is to automate the login experience, retrieve the verification code
+      from email messages, and allow easy access to learning content like course modules. After login, 
+      the user can automatically navigate to "My Learning" and fetch course and module data, storing it 
+      in a structured format (CSV or Excel) for easy access and tracking.`,
       goals: [
-        { title:"Simplify Household Management", goal: "Enable parents to assign chores to children effortlessly and allow children to track their progress independently."},
-        { title:'Encourage Responsibility', goal: 'Motivate children with rewards and points for completing tasks.'},
-        { title:'Real-Time Interaction', goal: 'Synchronize data across all family members in real-time, ensuring instant updates.'},
-        { title:'User-Friendly Experience', goal: 'Provide an intuitive drag-and-drop interface for task management.'},
-        { title:'Gamification and Rewards', goal: 'Incentivize children by awarding points for completed tasks.'}
+        { title:"Automate Login", goal: "Leverage Selenium and Azure's OAuth2 authentication (via MSAL) to automate login and retrieve the verification code from email for seamless user login."},
+        { title:'Access Learning Content', goal: 'Navigate to the "My Learning" page to retrieve course and module data.'},
+        { title:'Data Extraction', goal: 'Extract course and submodule titles, storing them in CSV format for easy tracking.'},
+        { title:'Error Handling', goal: 'Manage dynamic web elements effectively and handle edge cases like failed authentications.'},
+        { title:'Scalability', goal: 'Enable future expansion for interacting with additional websites or adding new features without needing to overhaul the core logic.'}
       ],
       technologies: [
-        { name: 'React', description:"Hooks for creating a dynamic, responsive UI."}, 
-        { name: 'Tailwind CSS', description: "Modern, customizable styling."}, 
-        { name:'React DnD (Drag-and-Drop)', description: 'For task management.'},
-        { name: 'Firebase', description:'Firestore as a real-time database and Firebase Authentication for secure user login and role-based access.'},
-        { name:'Redux Toolkit', description: 'Managing global state (tasks, children, and user data).'}
+        { name: 'Python', description:' Used to write scripts for automation, email handling, and data management.'}, 
+        { name: 'Selenium', description: "A web automation tool to interact with Udemy's website, allowing the script to simulate user actions such as clicking buttons and typing input."}, 
+        { name:'Azure OAuth2 (MSAL)', description: 'Secure user login via Azure. The OAuth2 flow ensures a safe and reliable sign-in process, including retrieving and processing the verification code from email.'},
+        { name: 'pytest', description:'A framework used for testing and verifying that the login, navigation, and data extraction steps work correctly.'},
+        { name:'Undetected Chromedriver', description: 'Avoids bot detection.'}
       ],
-      liveLink: 'https://zippy-pavlova-6a251a.netlify.app',
-      githubLink: 'https://github.com/zol22/Parent-Child-Chore-Manager',
+      githubLink: 'https://github.com/zol22/Course_Progress_Tracker',
     },
+  
   };
+
 
   const project = projectDetails[projectId];
 

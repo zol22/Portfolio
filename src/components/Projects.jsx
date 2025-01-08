@@ -10,9 +10,9 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Course Progress Tracker',
-    description: 'This project automates the login process and navigation through the Udemy website...',
-    imageUrl: '/images/course-tracker-unsplash.jpg',
+    name: 'Family Chore Tracker',
+    description: 'It is an interactive web application designed to streamline family task management. It allows parents to assign tasks, track progress...',
+    imageUrl: '/images/chore-tracker-unsplash.jpg',
   },
   {
     id: 3,
@@ -22,11 +22,13 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Family Chore Tracker',
-    description: 'It is an interactive web application designed to streamline family task management. It allows parents to assign tasks, track progress...',
-    imageUrl: '/images/chore-tracker-unsplash.jpg',
+    name: 'Course Progress Tracker',
+    description: 'This project automates the login process and navigation through the Udemy website...',
+    imageUrl: '/images/course-tracker-unsplash.jpg',
   },
 ];
+
+
 
 const Projects = () => {
   return (
