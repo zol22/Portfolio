@@ -122,7 +122,7 @@ const ProjectDetail = () => {
       <img 
           src={project.image} 
           alt={project.name} 
-          className="w-1/2  h-auto object-cover mb-10 p-2 mx-auto"
+          className="w-full  h-auto object-cover mb-10 p-2"
       />
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">{project.description}</p>
       <h3 className="text-2xl font-semibold text-gray-700 mb-2">Goals</h3>
