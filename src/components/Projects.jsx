@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 4,
-    name: 'E-commerce Web App',
+    name: 'Family Chore Tracker',
     description: 'It is an interactive web application designed to streamline family task management. It allows parents to assign tasks, track progress...',
     imageUrl: '/images/chore-tracker-unsplash.jpg',
   },
