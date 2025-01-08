@@ -84,12 +84,35 @@ const ProjectDetail = () => {
       liveLink: 'https://ecommerce-faca4.web.app',
       githubLink: 'https://github.com/zol22/ecommerce-app',
     },
+    4: {
+      name: 'Family Chore Tracker',
+      image: '/images/chore-tracker.png',
+      description: `The Family Chore Tracker is an interactive web application designed to streamline family task management. 
+      It allows parents to assign tasks, track progress, and reward children with points. The app fosters accountability, teamwork, 
+      and motivation among family members by gamifying household chores. `,
+      goals: [
+        { title:"Simplify Household Management", goal: "Enable parents to assign chores to children effortlessly and allow children to track their progress independently."},
+        { title:'Encourage Responsibility', goal: 'Motivate children with rewards and points for completing tasks.'},
+        { title:'Real-Time Interaction', goal: 'Synchronize data across all family members in real-time, ensuring instant updates.'},
+        { title:'User-Friendly Experience', goal: 'Provide an intuitive drag-and-drop interface for task management.'},
+        { title:'Gamification and Rewards', goal: 'Incentivize children by awarding points for completed tasks.'}
+      ],
+      technologies: [
+        { name: 'React', description:"Hooks for creating a dynamic, responsive UI."}, 
+        { name: 'Tailwind CSS', description: "Modern, customizable styling."}, 
+        { name:'React DnD (Drag-and-Drop)', description: 'For task management.'},
+        { name: 'Firebase', description:'Firestore as a real-time database and Firebase Authentication for secure user login and role-based access.'},
+        { name:'Redux Toolkit', description: 'Managing global state (tasks, children, and user data).'}
+      ],
+      liveLink: 'https://zippy-pavlova-6a251a.netlify.app',
+      githubLink: 'https://github.com/zol22/Parent-Child-Chore-Manager',
+    },
   };
 
   const project = projectDetails[projectId];
 
   return (
-    <section className="p-10  bg-gray-50 rounded-xl shadow-xl">
+    <section className="p-10 bg-gray-50 rounded-xl shadow-xl">
       <button onClick={handleBackClick}className="px-4 text-sm py-2 bg-primary text-white rounded hover:bg-yellow-950 mb-10 transition duration-300"
       >
       Back To Home
@@ -99,7 +122,7 @@ const ProjectDetail = () => {
       <img 
           src={project.image} 
           alt={project.name} 
-          className="w-full  h-auto object-cover mb-10 p-2"
+          className="w-1/2  h-auto object-cover mb-10 p-2 mx-auto"
       />
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">{project.description}</p>
       <h3 className="text-2xl font-semibold text-gray-700 mb-2">Goals</h3>

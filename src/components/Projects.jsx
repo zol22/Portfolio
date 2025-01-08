@@ -20,6 +20,12 @@ const projects = [
     description: 'It is a React-based web application designed to simulate an online shopping platform...',
     imageUrl: '/images/E-commerce-unsplash.jpg',
   },
+  {
+    id: 4,
+    name: 'E-commerce Web App',
+    description: 'It is an interactive web application designed to streamline family task management. It allows parents to assign tasks, track progress...',
+    imageUrl: '/images/chore-tracker-unsplash.jpg',
+  },
 ];
 
 const Projects = () => {
