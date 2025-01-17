@@ -1,8 +1,9 @@
 
 const skills = {
-  Languages: ['JavaScript', 'Python', 'HTML', 'CSS', 'SQL'],
-  Frameworks: ['React', 'Node.js', 'Tailwind CSS', 'Selenium', 'Django'],
-  Others: ['Git', 'Automation Testing', 'Postman', 'JIRA', 'Agile'],
+  Frontend: ['React','Tailwind CSS','Next.js','Typescript', 'Responsive Design'],
+  Backend: ['Node.js', 'Express.js' , 'GraphQL'],
+  Databases: ['Firebase','SQL', 'MongoDB'],
+  Others: ['Automation Testing', 'Agile Methodologies', 'Authentication', 'APIs','Git', 'JIRA'],
 };
 
 const Skills = () => {
