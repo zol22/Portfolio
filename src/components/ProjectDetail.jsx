@@ -118,6 +118,46 @@ const ProjectDetail = () => {
       githubLink: "https://github.com/zol22/ecommerce-app",
     },
     4: {
+      name: "Job Tracker",
+      image: "/images/Course_Tracker.png",
+      description: `The Job Tracker Web App is a full-stack application designed to help users efficiently manage and track job applications. Built with modern web technologies, it offers a user-friendly interface for organizing job data, tracking statuses, and adding notes, ensuring users stay on top of their job search.`,
+      whatItDoes: [
+        "Enables users to add, edit, and delete job applications.",
+        "Tracks job details such as title, company, description, status, and comments.",
+        "Provides tabs for filtering jobs by their status, such as Applied, Interviewing, Offers, and Archived.",
+        "Displays detailed history of status changes for each job.",
+        "Includes reminders for follow-ups and interview preparation.",
+        "Allows users to log daily affirmations for motivation."
+     ],
+      howToUse: [
+        "Enter the job title, company, description, and status using the intuitive form.",
+        "View job applications in a categorized table.",
+        "Update statuses (e.g., Applied, Interview Scheduled) and add comments for better tracking.",
+        "Add reminders for interviews or follow-ups.",
+        "Log affirmations to keep yourself focused during the job search."
+      ],
+      features: [
+        "Dynamic Status Tracking: Easily update job statuses and view their history.",
+        "Reminders Section: Create custom reminders for interviews and tasks.",
+        "Motivational Affirmations: A section to write and save daily affirmations.",
+        "Responsive Design: Mobile-friendly layout ensures usability across devices."
+      ],
+      purpose: `The Course Progress Tracker simplifies and automates the tedious process of manually checking course progress. Designed for Udemy learners, it not only enhances learning organization but also serves as a showcase of Python automation and web scraping expertise.`,
+      technologies: [
+        { name: "React", description: "Powers the dynamic and interactive user interface." },
+        { name: "Tailwind CSS", description: "For responsive and modern UI design." },
+        { name: "Next.js", description: "Server-rendered user interfaces." },
+        { name: "Express.js", description: "Handles API endpoints for CRUD operations." },
+        { name: "Node.js", description: "Backend runtime environment." },
+        { name: "Netlify", description: "Hosts the frontend." },
+        { name: "Render", description: " Hosts the backend." },
+
+      ],
+      problemSolved: `Tracking Udemy course progress manually is time-consuming and prone to errors. This project automates the process, providing a clear and structured way to monitor learning, thereby saving time and boosting productivity.`,
+      liveLink: "https://silly-cucurucho-24341f.netlify.app/",
+      githubLink: "https://github.com/zol22/Job-Tracker",
+    },
+    5: {
       name: "Course Progress Tracker",
       image: "/images/Course_Tracker.png",
       description: `The Course Progress Tracker is a Python-based automation project that streamlines the process of tracking learning progress on the Udemy platform. By leveraging Selenium and Azure OAuth2 for authentication, this project extracts course and module data and organizes it for easy analysis, showcasing advanced skills in web automation and real-world problem-solving.`,

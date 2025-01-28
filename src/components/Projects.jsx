@@ -22,6 +22,12 @@ const projects = [
   },
   {
     id: 4,
+    name: 'Job Tracker',
+    description: 'This full-stack application is designed to help users efficiently manage and track job applications...',
+    imageUrl: '/images/course-tracker-unsplash.jpg',
+  },
+  {
+    id: 5,
     name: 'Course Progress Tracker',
     description: 'This project automates the login process and navigation through the Udemy website...',
     imageUrl: '/images/course-tracker-unsplash.jpg',

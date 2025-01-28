@@ -9,8 +9,8 @@ const Home = () => {
         <div>
             <About />
             <Skills />
-            <Education />
             <Projects data-aos="fade-right"/>
+            <Education />
             <Contact />
 
         </div>
