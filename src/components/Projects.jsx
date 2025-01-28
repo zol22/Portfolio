@@ -24,7 +24,7 @@ const projects = [
     id: 4,
     name: 'Job Tracker',
     description: 'This full-stack application is designed to help users efficiently manage and track job applications...',
-    imageUrl: '/images/course-tracker-unsplash.jpg',
+    imageUrl: '/images/job-tracker.jpg',
   },
   {
     id: 5,

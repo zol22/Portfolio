@@ -119,7 +119,7 @@ const ProjectDetail = () => {
     },
     4: {
       name: "Job Tracker",
-      image: "/images/Course_Tracker.png",
+      image: "/images/job-tracker.png",
       description: `The Job Tracker Web App is a full-stack application designed to help users efficiently manage and track job applications. Built with modern web technologies, it offers a user-friendly interface for organizing job data, tracking statuses, and adding notes, ensuring users stay on top of their job search.`,
       whatItDoes: [
         "Enables users to add, edit, and delete job applications.",
