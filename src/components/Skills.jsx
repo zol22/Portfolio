@@ -2,8 +2,8 @@
 const skills = {
   Frontend: ['React','Tailwind CSS','Next.js','Typescript', 'Responsive Design'],
   Backend: ['Node.js', 'Express.js' , 'GraphQL'],
-  Databases: ['Firebase','SQL', 'MongoDB'],
-  Others: ['Automation Testing', 'Agile Methodologies', 'Authentication', 'APIs','Git', 'JIRA'],
+  Databases: ['Firebase','SQL', 'PostgreSQL', 'Prisma'],
+  Others: ['Agile Methodologies', 'Authentication', 'APIs','Git', 'JIRA', 'Zustand', "Redux Toolkit"],
 };
 
 const Skills = () => {

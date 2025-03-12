@@ -9,7 +9,7 @@ const Title = () => {
     return (
         <Link to="/" onClick={handleHomeClick}>
             <h2 className="text-3xl text-textPrimary font-semibold ">Solange Ormeno</h2>
-            <h2 className="text-xl">Software Engineer</h2>
+            <h2 className="text-xl">Full Stack Web Developer</h2>
         </Link>
     )
 

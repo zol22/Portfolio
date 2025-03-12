@@ -120,37 +120,38 @@ const ProjectDetail = () => {
     4: {
       name: "Job Tracker",
       image: "/images/job-tracker.png",
-      description: `The Job Tracker Web App is a full-stack application designed to help users efficiently manage and track job applications. Built with modern web technologies, it offers a user-friendly interface for organizing job data, tracking statuses, and adding notes, ensuring users stay on top of their job search.`,
+      description: `The Job Tracker Web App is a A full-stack job application tracker built with Next.js, Prisma, PostgreSQL, and Clerk Authentication, designed to help users manage and track their job applications efficiently.`,
       whatItDoes: [
-        "Enables users to add, edit, and delete job applications.",
-        "Tracks job details such as title, company, description, status, and comments.",
-        "Provides tabs for filtering jobs by their status, such as Applied, Interviewing, Offers, and Archived.",
-        "Displays detailed history of status changes for each job.",
-        "Includes reminders for follow-ups and interview preparation.",
+        "Track job applications with status updates (Applied, Interviewing, Offer, etc.).",
+        "Add comments & notes for each job entry.",
+        "Optimistic UI updates for instant feedback.",
+        "User authentication via Clerk (Sign In, Sign Up, Logout).",
+        "Database integration with Prisma & PostgreSQL.",
+        "Responsive UI with Tailwind CSS.",
         "Allows users to log daily affirmations for motivation."
      ],
       howToUse: [
-        "Enter the job title, company, description, and status using the intuitive form.",
-        "View job applications in a categorized table.",
-        "Update statuses (e.g., Applied, Interview Scheduled) and add comments for better tracking.",
-        "Add reminders for interviews or follow-ups.",
-        "Log affirmations to keep yourself focused during the job search."
+        "Sign up / Log in to access the dashboard.",
+        "Add a job with details like company name, title, and status.",
+        "Update job statuses (e.g., Applied, Interviewed) as you progress through applications.",
+        "Add notes/comments to track recruiter feedback.",
+        "View job statistics for insights on your job search."
       ],
       features: [
-        "Dynamic Status Tracking: Easily update job statuses and view their history.",
-        "Reminders Section: Create custom reminders for interviews and tasks.",
-        "Motivational Affirmations: A section to write and save daily affirmations.",
-        "Responsive Design: Mobile-friendly layout ensures usability across devices."
+        "User Authentication (Clerk)",
+        "CRUD Operations (Create, Read, Update, Delete Jobs)",
+        "Optimistic UI for Instant Updates",
+        "Responsive Design (Mobile & Desktop)",
+        "Data Persistence with PostgreSQL & Prisma",
       ],
       purpose: `The Course Progress Tracker simplifies and automates the tedious process of manually checking course progress. Designed for Udemy learners, it not only enhances learning organization but also serves as a showcase of Python automation and web scraping expertise.`,
       technologies: [
-        { name: "React", description: "Powers the dynamic and interactive user interface." },
-        { name: "Tailwind CSS", description: "For responsive and modern UI design." },
-        { name: "Next.js", description: "Server-rendered user interfaces." },
-        { name: "Express.js", description: "Handles API endpoints for CRUD operations." },
-        { name: "Node.js", description: "Backend runtime environment." },
-        { name: "Netlify", description: "Hosts the frontend." },
-        { name: "Render", description: " Hosts the backend." },
+        { name: "FrontEnd", description: "Next.js, React, Tailwind.CSS" },
+        { name: "Backend", description: "Next.js API Routes, Prisma" },
+        { name: "Database", description: "PostgreSQL (via prisma ORM)" },
+        { name: "Authentication", description: "Clerk" },
+        { name: "State management", description: "Zustand" },
+        { name: "Deployment", description: "Vercel" },
 
       ],
       problemSolved: `Tracking Udemy course progress manually is time-consuming and prone to errors. This project automates the process, providing a clear and structured way to monitor learning, thereby saving time and boosting productivity.`,
@@ -202,7 +203,7 @@ const ProjectDetail = () => {
         onClick={() => navigate("/")}
         className="px-6 py-2 mb-8 bg-primary text-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
       >
-        ← Back to Home
+        ←
       </button>
       {/* <h1 className="text-2xl font-bold px-4 py-2 rounded-lg flex justify-center">
           {project.name}
@@ -215,6 +216,31 @@ const ProjectDetail = () => {
           className="w-full max-w-2xl  h-auto rounded-lg shadow-md"
         />
        
+      </div>
+
+
+      {/* Call-to-Action */}
+      <div className="flex gap-2 mt-8 mb-5">
+        {project.liveLink && (
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-3 bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
+          >
+            See Live
+          </a>
+        )}
+        {project.githubLink && (
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
+          >
+            GitHub Repository
+          </a>
+        )}
       </div>
 
       {/* Description */}
@@ -274,30 +300,6 @@ const ProjectDetail = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Call-to-Action */}
-      <div className="flex gap-6 mt-8">
-        {project.liveLink && (
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
-          >
-            See Live
-          </a>
-        )}
-        {project.githubLink && (
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
-          >
-            GitHub Repository
-          </a>
-        )}
       </div>
     </section>
   );
