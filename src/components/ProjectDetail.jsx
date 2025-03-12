@@ -155,7 +155,7 @@ const ProjectDetail = () => {
 
       ],
       problemSolved: `Tracking Udemy course progress manually is time-consuming and prone to errors. This project automates the process, providing a clear and structured way to monitor learning, thereby saving time and boosting productivity.`,
-      liveLink: "https://silly-cucurucho-24341f.netlify.app/",
+      liveLink: "https://job-tracker-next-js.vercel.app/",
       githubLink: "https://github.com/zol22/Job-Tracker",
     },
     5: {
