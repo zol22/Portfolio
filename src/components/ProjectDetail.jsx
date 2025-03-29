@@ -159,35 +159,41 @@ const ProjectDetail = () => {
       githubLink: "https://github.com/zol22/Job-Tracker",
     },
     5: {
-      name: "Course Progress Tracker",
-      image: "/images/Course_Tracker.png",
-      description: `The Course Progress Tracker is a Python-based automation project that streamlines the process of tracking learning progress on the Udemy platform. By leveraging Selenium and Azure OAuth2 for authentication, this project extracts course and module data and organizes it for easy analysis, showcasing advanced skills in web automation and real-world problem-solving.`,
+      name: "Peruvian Buffet Website",
+      description: `A fully responsive and SEO-optimized website built for a family-owned Peruvian catering business based in Orlando, FL. This site showcases traditional dishes, Rosa’s story, and contact options for pickup and delivery.`,
+      image: "/images/cateringLanding.png",
       whatItDoes: [
-        "Authenticates via Azure OAuth2 and navigates to the Udemy platform.",
-        "Accesses the `My Learning` page to gather data about enrolled courses",
-        "Collects course titles, module names, and submodules, storing them in structured formats like CSV or Excel.",
-        "Adapts to Udemy's dynamic web elements for robust and reliable performance."
+        "Displays authentic Peruvian food in an engaging, modern layout",
+        "Offers a simple and beautiful menu with pricing and images",
+        "Lets users view a food gallery, and easily navigate the site on mobile or desktop",
+        "Includes a contact form for inquiries, powered by Netlify Forms",
+        "Built to be fast, lightweight, and SEO-optimized for Google search and local discovery"
      ],
       howToUse: [
-        "Run the script to authenticate and log in to Udemy using Azure OAuth2.",
-        "The automation takes you to the `My Learning` page seamlessly.",
-        "Extracts course titles, modules, and submodules, organizing them into an array.",
-        "Outputs the collected information into a CSV or Excel file for future reference."
+        "Visit the homepage to learn more about Rosa and her food",
+        "Browse the menu for tamales, arroz con leche, causa, and more",
+        "Head to the contact section to send an order or inquiry",
+        "Use mobile or desktop — the experience is fully responsive"
       ],
       features: [
-        "Azure Authentication: Secure login process using OAuth2.",
-        "Dynamic Web Navigation: Efficient handling of dynamic elements for seamless operation.",
-        "Structured Data Export: Outputs course and module details into CSV/Excel for detailed tracking.",
-        "Real-World Problem Solving: Addresses the challenge of manual course progress tracking."
+        " SEO Meta Tags (Open Graph, description, title per page)",
+        " Mobile-First Responsive Design",
+        "Smooth navigation across sections (Home, Menu, About, Contact)",
+        "Gallery with a Pinterest-style layout",
+        "Contact form with success page and Netlify Forms integration",
+       "Accessible layout using semantic HTML and ARIA best practices"
       ],
       purpose: `The Course Progress Tracker simplifies and automates the tedious process of manually checking course progress. Designed for Udemy learners, it not only enhances learning organization but also serves as a showcase of Python automation and web scraping expertise.`,
       technologies: [
-        { name: "Python", description: "Core programming language." },
-        { name: "Selenium", description: "Enables browser automation for navigation and data extraction." },
-        { name: "Azure OAuth2", description: "Secures user authentication." },
-        { name: "Pytest", description: "Handles test-driven development for robust implementation." },
+        { name: "Astro", description: "Static site generator (lightweight and fast)" },
+        { name: "Tailwind.CSS", description: "Utility-first responsive styling." },
+        { name: "Netlify", description: "Hosting & form handling" },
+        { name: "Astro Icons", description: "Clean icon support" },
+        { name: "Astro Assets", description: "Optimized image loading with WebP + lazy loading" },
+        { name: "Figma", description: "UX/UI Design & prototyping" },
       ],
       problemSolved: `Tracking Udemy course progress manually is time-consuming and prone to errors. This project automates the process, providing a clear and structured way to monitor learning, thereby saving time and boosting productivity.`,
+      liveLink: "https://fluffy-froyo-a73b4a.netlify.app",
       githubLink: "https://github.com/zol22/Course_Progress_Tracker",
     },
     

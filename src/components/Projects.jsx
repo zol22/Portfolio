@@ -28,9 +28,9 @@ const projects = [
   },
   {
     id: 5,
-    name: 'Course Progress Tracker',
-    description: 'This project automates the login process and navigation through the Udemy website...',
-    imageUrl: '/images/course-tracker-unsplash.jpg',
+    name: 'Peruvian Buffet Website',
+    description: 'A fully responsive and SEO-optimized website built for a family-owned Peruvian catering business based in Orlando, FL.',
+    imageUrl: '/images/catering.jpg',
   },
 ];
 
