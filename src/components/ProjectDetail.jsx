@@ -193,8 +193,8 @@ const ProjectDetail = () => {
         { name: "Figma", description: "UX/UI Design & prototyping" },
       ],
       problemSolved: `Tracking Udemy course progress manually is time-consuming and prone to errors. This project automates the process, providing a clear and structured way to monitor learning, thereby saving time and boosting productivity.`,
-      liveLink: "https://fluffy-froyo-a73b4a.netlify.app",
-      githubLink: "https://github.com/zol22/PeruBuffetWebsite",
+      liveLink: "https://shimmering-kashata-f59a6c.netlify.app",
+      githubLink: "https://github.com/zol22/RosiPeruvianBufffet",
     },
     
   };
